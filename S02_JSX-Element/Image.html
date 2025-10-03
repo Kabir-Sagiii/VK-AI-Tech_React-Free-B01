@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      img {
+        box-shadow: 0 0 10px red;
+        border-radius: 50%;
+      }
+    </style>
+    <!-- Integrate React Library-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <!-- Integrate React DOM Library-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <!-- Integrate Babel Library-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root">
+      <!--React Elements should be placed here-->
+    </div>
+
+    <script type="text/babel">
+      var img = (
+        <img
+          src="https://www.devopsschool.com/blog/wp-content/uploads/2022/03/reactjs-benefits.jpg"
+          width="300"
+          height="300"
+        />
+      );
+
+      ReactDOM.render(img, document.getElementById("root"));
+    </script>
+  </body>
+</html>
